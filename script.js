@@ -43,7 +43,7 @@ function converterIdade(){
     let idade , r;
     idade = parseFloat(prompt('Digite sua idade'));
     r = 12 * idade;
-    document.write(r);
+    document.writeln(r);
 }
 
 function media(){
@@ -52,20 +52,15 @@ function media(){
     nota2 = parseFloat(prompt('Digite sua nota2'));
     nota3 = parseFloat(prompt('Digite sua nota3'));
     r = (nota1 + nota2 + nota3) / 3;
-    document.write(r);
+    document.writeln(r);
 
     if (r >= 6){
         document.writeln(" O aluno foi aprovado");
     }else{
         document.writeln(" O aluno foi reprovado");
     }
-
-function desconto(preco, desconto) {
-    let valorDesconto = (preco * desconto) / 100;
-    let precoFinal = preco - valorDesconto;
-    console.log("Preço final com desconto: R$ " + precoFinal.toFixed(2));
-    return precoFinal;
 }
+
 
 function calcularDesconto(){
     let preco , desconto , valorDesconto, precoFinal;
@@ -100,8 +95,4 @@ function converterMedida(){
     metros = parseFloat(prompt('Digite o valor em Metros'));
     centimetros = metros * 100;
     document.writeln(metros + ' metro(s) = ' + centimetros + 'centimetro(s)');
-}
-
-
-
 }
